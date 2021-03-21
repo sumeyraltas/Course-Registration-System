@@ -19,7 +19,6 @@ public class Driver {
 		System.out.println("Program Year: "+programYear);
 		
 		while (!value[0].equals("exit")) {
-		
 			
 			switch (comm) {
 			
@@ -33,9 +32,7 @@ public class Driver {
                 boolean a = true;
 
                 Course course = new Course(courseCode,courseName,year,semester,courseCapacity);
-
                 //course.AddCourse();
-
                 for(int i = 0; i<CourseList.size(); i++){
                 String cc = CourseList.get(i).getCourseCode();
                 if(courseCode.equals(cc)) {
@@ -44,7 +41,6 @@ public class Driver {
                         break;
                         }
                 }
-
                 
                 if(a) { 
                     Course.CourseList.add(course);
@@ -52,8 +48,7 @@ public class Driver {
                     break;
                 }
 
-                break;
-			    
+                break;    
 				case "createinstructor":
 					
 					String intructorName = value[2];
@@ -277,7 +272,7 @@ public class Driver {
 					
 					System.out.println("("+report.getDegree()+")"+report.getName()+" - "+taIDreport);
 					
-					for(int i = 0 ; i<TeachingAssistantList.size() ;i++){ //tam deðil
+					for(int i = 0 ; i<TeachingAssistantList.size() ;i++){ //tam deÃ°il
 						System.out.println(CourseList.get(i).getCourseCode()+" - "+CourseList.get(i).getCourseName());
 					}
 					
@@ -292,7 +287,7 @@ public class Driver {
 					
 					System.out.println("("+reportra.getDegree()+")"+reportra.getName()+" - "+raIDreport);
 					
-					for(int i = 0 ; i<AssistantList.size() ;i++){ //tam deðil
+					for(int i = 0 ; i<AssistantList.size() ;i++){ //tam deÃ°il
 						System.out.println(CourseList.get(i).getCourseCode()+" - "+CourseList.get(i).getCourseName());
 					}
 					
